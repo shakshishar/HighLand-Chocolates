@@ -12,6 +12,7 @@ This is the Front-end HTML,CSS,JavaScript website. where anyone can add maximum 
 5. User can delete the added Chocolates from the cart.
 6. User can see the numbers of added Chocolates into the cart.
 
+![chocolates](https://github.com/shakshishar/HighLand-Chocolates/assets/139610476/1d84295f-3212-4817-95c7-086f76f1b2ea)
 
 
 
