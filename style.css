@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, 'poppins';
+    font-size: 18px;
+}
+
+/*********************body ******************/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*********************Header******************/
+.header {
+    height: 80px;
+    width: 97%;
+    background-color: rgb(50, 78, 78);
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header .logo img {
+    height: 70px;
+    width: 90px;
+}
+
+.add {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.fa-solid {
+    color: rgb(50, 78, 78);
+}
+
+.add p {
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: rgb(50, 78, 78);
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 97%;
+    margin-bottom: 30px;
+}
+
+/*************CSS for the chocolate selection container *************/
+#root
+{
+    width: 70%;
+}
+
+
+.chocolates {
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.chocolate {
+   width:30%;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.chocolate p{
+    font-size: 13px;
+    font-weight: 700;
+    color:rgb(70, 12, 12);
+    margin-top: 5px;
+}
+
+.chocolate img {
+    height: 200px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    border:none;
+   
+}
+.chocolate img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}  
+
+.chocolate h2{
+    margin-top:10px;
+
+}
+
+/************* CSS for the "Add to Cart" button ***********/
+
+.add-to-cart {
+    background-color: rgb(50, 78, 78);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top:10px;
+    
+}
+.add-to-cart:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.sidebar {
+    margin-top: 20px;
+    width: 30%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+    height: fit-content;
+}
+
+.head {
+    background-color: rgb(50, 78, 78);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+    margin-top:30px;   
+}
+#checkout{
+    background-color: rgb(50, 78, 78);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;   
+}
+.cart-item{
+    margin-bottom:20px;
+    position: relative; 
+}
+.cart-item i{   
+position: absolute;
+right: 4px;
+top:7px
+}
+
+/************ Media Query for maximum width of 1024px *********/
+
+@media (max-width: 1024px) {
+    .chocolate {
+        width: 30%;
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .chocolate img {
+        height: 150px;
+        width: 200px;  
+    }    
+    .add-to-cart {     
+        padding: 7px 10px;      
+    }
+    
+    .chocolate h2{
+       font-size: 15px;
+    }
+    #checkout{    
+        padding: 7px 10px;
+    }
+    .cart-item{
+        font-size: 13px;  
+    }
+    .sidebar {
+        width:90%;
+    }
+}
+
+/************ Media Query for maximum width of 768px *********/
+
+@media (max-width: 768px) {
+    .chocolate {
+        width: 100%;
+    }
+    .chocolate img {
+        height: 130px;
+        width: 170px;
+       
+    }    
+    .add-to-cart {
+        
+        padding: 5px 7px;
+         
+    }
+    .chocolate h2{
+        font-size: 13px;
+     }
+     #checkout{    
+        padding: 5px 7px;     
+    }
+    .cart-item{
+        font-size: 12px;
+      
+    }
+    .sidebar {
+        width:90%;
+    }
+}
+
+/************ Media Query for maximum width of 480px *********/
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    .chocolate {
+        margin-top: 30px;
+    }
+    .chocolate p {
+        margin-top: 10px;
+    }
+    .add-to-cart {
+        margin-top: 20px;
+    }
+    .sidebar {
+        width:90%;
+    }
+}

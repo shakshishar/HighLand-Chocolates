@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ------------CSS Stylesheet Link------------ -->
+    <link rel="stylesheet" href="style.css">
+    <!------------- Font Awesome Link--------------->
+    <script src="https://kit.fontawesome.com/0672f881c3.js" crossorigin="anonymous"></script>
+    <title>HighLand Chocolates</title>
+</head>
+<body>
+
+    <!----------------- Header ------------------->
+    <div class="header">
+        <p class="logo"><img src="images/logo/logo1.png"></p>
+        <div class="add"><i class="fa-solid fa-cart-shopping"></i>
+            <p id="count">0</p>
+        </div>
+    </div>
+
+    <!-------------- Chocolate Selection --------------->
+    <h1>Select Chocolates for Your Custom Pack (Max 8 Items)</h1>
+
+    <!----------------------chocolates container -----------------  -->
+
+    <div class="container">
+        <div id="root" class="chocolates">
+            <div class="chocolate" data-id="1" data-name="cadbury dairy milk" data-price="100">
+                <img src="images/dairy_milk.jpg">
+                <h2>cadbury dairy milk</h2>
+                <p>price=100</p>
+                <button class="add-to-cart">Add to Cart</button>
+                
+            </div>
+            <div class="chocolate" data-id="2" data-name="cupcakes Chocolate" data-price="120">
+                <img src="images/mini-chocolate-cupcake.jpeg">
+                <h2>cupcakes Chocolate</h2>
+                <p>price=120</p>
+                <button class="add-to-cart">Add to Cart</button>
+
+            </div>
+            <div class="chocolate" data-id="3" data-name="dark and milk chocolate" data-price="300">
+                <img src="images/Dark-and-Milk-Chocolate.jpg">
+                <h2>dark and milk chocolate</h2>
+                <p>price=300</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="chocolate" data-id="4" data-name="Dark Chocolate" data-price="200">
+                <img src="images/dark_chocolate.jpeg">
+                <h2>Dark Chocolate</h2>
+                <p>price=200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>     
+       
+      
+            <div class="chocolate" data-id="5" data-name="ferrero rocher" data-price="450">
+                <img src="images/ferero.jpeg">
+                <h2>ferrero rocher</h2>
+                <p>price=450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="chocolate" data-id="6" data-name="KitKat" data-price="80">
+                <img src="images/kitkat.jpeg">
+                <h2>KitKat</h2>
+                <p>price=80</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>    
+            <div class="chocolate" data-id="7" data-name="Bar One" data-price="40">
+                <img src="images/barone.jpeg">
+                <h2>Bar One</h2>
+                <p>price=40</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>    
+            <div class="chocolate" data-id="8" data-name="bournville" data-price="100">
+                <img src="images/bournville.jpeg">
+                <h2>bournville</h2>
+                <p>price=100</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>    
+            <div class="chocolate" data-id="9" data-name="Snickers" data-price="20">
+                <img src="images/Snickers.jpg">
+                <h2>Snickers</h2>
+                <p>price=20</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>     
+        </div>
+
+        <!--------------- Sidebar Added cart chocolates--------- -->
+        <div class="sidebar">
+            <div class="head"><p>My Cart</p></div>
+            <div id="cartItem">Your cart is empty</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">0</h2>
+                <button id="checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
