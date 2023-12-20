@@ -126,6 +126,7 @@ body {
     transform: scale(1.1);
     transition: all 0.3s ease-in-out;
 }
+/* ***************SideBar ************ */
 .sidebar {
     margin-top: 20px;
     width: 30%;
@@ -166,6 +167,9 @@ body {
 .cart-item{
     margin-bottom:20px;
     position: relative; 
+}
+.cartItem{
+    display: none;
 }
 .cart-item i{   
 position: absolute;
